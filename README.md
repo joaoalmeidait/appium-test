@@ -24,7 +24,7 @@ Comandos essenciais para iniciar, conectar e gerenciar seus dispositivos virtuai
 
 ---
 
-## 2. Instalação e Informações do App
+### 2. Instalação e Informações do App
 
 Comandos úteis para instalar o seu aplicativo e obter as informações necessárias para as suas **Desired Capabilities**.
 
@@ -32,7 +32,7 @@ Comandos úteis para instalar o seu aplicativo e obter as informações necessá
 |---------|-----------|
 | `adb install-multiple <arquivos.apk>` | Instala um pacote de APKs (split APKs), necessário para apps modernos. |
 | `adb push <origem> <destino>` | Copia um arquivo do seu computador para o emulador. |
-| `adb shell dumpsys window | grep -E 'mCurrentFocus'` | Retorna o **package** e a **activity** do app em primeiro plano. |
+| `adb shell dumpsys window \| grep -E 'mCurrentFocus'` | Retorna o **package** e a **activity** do aplicativo que está em primeiro plano no emulador. Fundamental para configurar as capacidades do Appium. |
 
 ---
 
