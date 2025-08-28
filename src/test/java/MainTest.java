@@ -1,5 +1,3 @@
-import sofascore.SofascoreConfig;
-
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 
