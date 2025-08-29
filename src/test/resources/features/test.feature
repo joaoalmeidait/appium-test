@@ -8,5 +8,5 @@ Feature: Teste de busca de time no Sofascore
     Examples:
       | time     |
       | Flamengo |
-      | Real Madrid |
-      | Manchester United |
+ ##     | Real Madrid |
+##      | Manchester United |

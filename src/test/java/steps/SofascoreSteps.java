@@ -17,7 +17,7 @@ public class SofascoreSteps {
 
     @Before
     public void setUp() throws URISyntaxException, MalformedURLException {
-        DriverManager.setUp();
+        DriverManager.setUp("com.sofascore.results", "com.sofascore.results.onboarding.OnboardingActivity");
         sofascorePage = new SofascorePage(DriverManager.getDriver());
     }
 

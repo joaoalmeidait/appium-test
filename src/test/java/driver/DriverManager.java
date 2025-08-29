@@ -11,12 +11,12 @@ public class DriverManager {
 
     private static AndroidDriver driver;
 
-    public static void setUp() throws URISyntaxException, MalformedURLException {
+    public static void setUp(String appPackage, String appWaitActivity) throws URISyntaxException, MalformedURLException {
         UiAutomator2Options options = new UiAutomator2Options()
                 .setPlatformName("Android")
                 .setAutomationName("UiAutomator2")
-                .setAppPackage("com.sofascore.results")
-                .setAppWaitActivity("com.sofascore.results.onboarding.OnboardingActivity")
+                .setAppPackage(appPackage)
+                .setAppWaitActivity(appWaitActivity)
                 .setUdid("emulator-5554")
                 .setEnsureWebviewsHavePages(true)
                 .setNativeWebScreenshot(true)
