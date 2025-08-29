@@ -14,6 +14,7 @@ import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.time.Duration;
+import java.util.List;
 
 public class SofascorePage {
 
@@ -55,8 +56,8 @@ public class SofascorePage {
         continueButton.click();
         WebElement remindLater = waitForElement(AppiumBy.xpath("//android.widget.TextView[@text=\"REMIND ME LATER\"]"));
         remindLater.click();
-        WebElement popUp = waitForElement(AppiumBy.xpath("//android.widget.ImageView[@resource-id=\"com.sofascore.results:id/image_view\"]"));
-        if (popUp.isDisplayed()){
+        List<WebElement> popUp = driver.findElements(By.xpath("//android.widget.ImageView[@resource-id=\"com.sofascore.results:id/image_view\"]"));
+        if (!popUp.isEmpty()) {
             System.out.println("Pop-up de onboarding exibido.");
             WebElement closeButton = waitForElement(AppiumBy.xpath("//android.widget.Button[@resource-id=\"com.sofascore.results:id/collapse_button\"]"));
             closeButton.click();
