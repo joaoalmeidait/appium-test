@@ -8,7 +8,8 @@ Este documento é um guia de referência rápido com os comandos e conceitos ess
 1. [Gerenciamento do Emulador](#1-gerenciamento-do-emulador)  
 2. [Instalação e Informações do App](#2-instalação-e-informações-do-app)  
 3. [Comandos do Servidor Appium](#3-comandos-do-servidor-appium)  
-4. [Comandos de Automação (no Código)](#4-comandos-de-automação-no-código)  
+4. [Comandos de Automação (no Código)](#4-comandos-de-automação-no-código)
+5. [Erros comuns](#5-erros-comuns)
 
 ---
 
@@ -61,3 +62,8 @@ driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 
 // Simula o pressionar da tecla Voltar
 driver.pressKey(new KeyEvent(AndroidKey.BACK));
+```
+## 5. Erros comuns
+
+erro InvalidElementStateException aparece quando se tenta digitar em algum elemento que nao recebe entrada de texto.
+solução: buscar no xml atraves do appium insoector qual é o elemento que recebe a entrada de dados.
