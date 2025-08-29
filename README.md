@@ -1,7 +1,7 @@
 # Guia de Referência Rápida: Automação Android com Appium
 
 Este documento é um guia de referência rápido com os comandos e conceitos essenciais para a automação de testes em aplicativos Android usando **Appium**.
-
+Seguir documentação oficial para instalar o appium: [Appium Docs](https://appium.io/docs/en/latest/quickstart/install/).
 ---
 
 ## 📑 Sumário
