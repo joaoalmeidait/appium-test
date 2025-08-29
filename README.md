@@ -9,6 +9,7 @@ Seguir documentação oficial para instalar o appium: [Appium Docs](https://appi
 2. [Instalação e Informações do App](#2-instalação-e-informações-do-app)  
 3. [Comandos do Servidor Appium](#3-comandos-do-servidor-appium)  
 4. [Comandos de Automação (no Código)](#4-comandos-de-automação-no-código)  
+4. [Erros comuns](#4-erros-comuns)  
 
 ---
 
@@ -61,3 +62,13 @@ driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 
 // Simula o pressionar da tecla Voltar
 driver.pressKey(new KeyEvent(AndroidKey.BACK));
+```
+## 5. Erros comuns
+
+### InvalidElementStateException
+
+**Descrição:**  
+Esse erro ocorre quando se tenta digitar em um elemento que não aceita entrada de texto.
+
+**Solução:**  
+Utilize o Appium Inspector para analisar o XML da tela e identificar corretamente o elemento que recebe a entrada de dados antes de interagir via código.
